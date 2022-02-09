@@ -24,11 +24,32 @@
         "^docs/java/.*\\.md$"
       ],
       "matchStrings": [
-        "<dependency>\\n\\s*<groupId>(?<groupId>io\\.temporal)<\/groupId>\\n\\s*<artifactId>(?<artifactId>[a-z-]+)<\/artifactId>\\n\\s*<version>(?<currentValue>[0-9.]+)<\/version>"
+        "<dependency>\\n\\s*<groupId>(?<groupId>io\\.temporal)<\/groupId>\\n\\s*<artifactId>(?<artifactId>[a-zA-Z0-9-]+)<\/artifactId>\\n\\s*<version>(?<currentValue>[0-9.]+)<\/version>",
+        "(implementation|testImplementation)\\s+'(?<depName>io\\.temporal:[a-zA-Z0-9-]+):(?<currentValue>[0-9.]+)'"
       ],
       "depNameTemplate": "{{{groupId}}}:{{{artifactId}}}",
       "datasourceTemplate": "maven",
       "versioningTemplate": "maven"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "temporalio/.*"
+      ],
+      "groupName": "Temporal Docker Images"
+    },
+    {
+      "matchDatasources": [
+        "maven"
+      ],
+      "matchPackageNames": [
+        "io\\.temporal:.*"
+      ],
+      "groupName": "Temporal Java SDK"
     }
   ]
 }
