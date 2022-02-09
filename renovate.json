@@ -16,7 +16,19 @@
       "matchStrings": [
         "(?<depName>temporalio/[a-z-]+):(?<currentValue>[0-9.]+)"
       ],
-      "datasourceTemplate": "docker"
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": [
+        "^docs/java/.*\\.md$"
+      ],
+      "matchStrings": [
+        "<dependency>\\n\\s*<groupId>(?<groupId>io\\.temporal)<\/groupId>\\n\\s*<artifactId>(?<artifactId>[a-z-]+)<\/artifactId>\\n\\s*<version>(?<currentValue>[0-9.]+)<\/version>"
+      ],
+      "depNameTemplate": "{{{groupId}}}:{{{artifactId}}}",
+      "datasourceTemplate": "maven",
+      "versioningTemplate": "maven"
     }
   ]
 }
