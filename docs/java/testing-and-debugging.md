@@ -152,7 +152,7 @@ as a dependency to your project:
 <dependency>
     <groupId>io.temporal</groupId>
     <artifactId>temporal-testing-junit4</artifactId>
-    <version>1.2.0</version>
+    <version>1.5.0</version>
     <scope>test</scope>
 </dependency>
 ```
