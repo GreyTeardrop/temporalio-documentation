@@ -16,11 +16,11 @@ jobs:
         # github object: https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
         # event names: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
         if: "github.event_name == 'push'"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Checkout on PR
         if: "github.event_name == 'pull_request'"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
