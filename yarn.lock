@@ -3303,7 +3303,7 @@ doctrine@^3.0.0:
     esutils "^2.0.2"
 
 "docusaurus-tailwindcss-loader@file:plugins/docusaurus-tailwindcss-loader":
-  version "0.0.1"
+  version "0.0.0"
 
 dom-converter@^0.2.0:
   version "0.2.0"
@@ -7170,9 +7170,10 @@ remark-squeeze-paragraphs@4.0.0:
   dependencies:
     mdast-squeeze-paragraphs "^4.0.0"
 
-remark-typescript-tools@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.npmjs.org/remark-typescript-tools/-/remark-typescript-tools-1.0.9.tgz"
+remark-typescript-tools@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/remark-typescript-tools/-/remark-typescript-tools-1.1.0.tgz#00cd9a2211f5982d4dec8c4b4ce095b4e163d9c6"
+  integrity sha512-roU/ZX+Gz5CuGKOWECTY7Gpotra+goqDnHSaL/IxEjgSjnrS8Ed3YXxGBXoaiiND3urhQABPOIJILNygRAYZ7A==
   dependencies:
     "@microsoft/tsdoc" "^0.12.21"
     prettier "^2.1.1"
