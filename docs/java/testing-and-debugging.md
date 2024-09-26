@@ -25,7 +25,7 @@ as a dependency to your project:
 <dependency>
     <groupId>io.temporal</groupId>
     <artifactId>temporal-testing</artifactId>
-    <version>1.2.0</version>
+    <version>1.25.2</version>
     <scope>test</scope>
 </dependency>
 ```
