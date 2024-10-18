@@ -14,7 +14,7 @@ sidebar_label: Java SDK introduction
 <dependency>
   <groupId>io.temporal</groupId>
   <artifactId>temporal-sdk</artifactId>
-  <version>1.5.0</version>
+  <version>1.26.0</version>
 </dependency>
 ```
 
